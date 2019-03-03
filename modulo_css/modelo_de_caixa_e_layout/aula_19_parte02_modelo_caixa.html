@@ -4,11 +4,18 @@
 <head>
     <meta charset="utf-8">
     <title>The Box Model</title>
+    <!--Aqui defino border box como estilo para todas as caixas , inserindo margem e padding =0-->
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+
+                
+        }
         body {
             background-color: gray;
-            margin: 0;
-            padding: 0;
+            
         }
 
         #box {
@@ -17,9 +24,8 @@
             border: 20px solid black;
             margin: 40px;
             width: 300px;
-            box-sizing: border-box;
+            
         }
-
         #content {
             background-color: #90EE90;
             /*green*/
